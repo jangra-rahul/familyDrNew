@@ -2,10 +2,14 @@
 import React from "react";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import CustomNavbar from "../CustomNavbar";
+import Footer from "../Footer";
 
 const page = () => {
   return (
-    <div className=" min-vh-100 d-flex flex-column justify-center">
+    <div
+      style={{ backgroundColor: "#eef6fe" }}
+      className=" min-vh-100 d-flex flex-column justify-center"
+    >
       <div className="bg-white">
         <CustomNavbar />
       </div>
@@ -25,7 +29,11 @@ const page = () => {
         <Row className="justify-content-center w-100">
           <Col md={8}>
             <Accordion className="w-100" defaultActiveKey="0" flush>
-              <Accordion.Item className="w-100" eventKey="0">
+              <Accordion.Item
+                className="w-100 mt-4"
+                data-aos="zoom-in"
+                eventKey="0"
+              >
                 <Accordion.Header className="w-100">
                   What is FamilyDr?
                 </Accordion.Header>
@@ -36,7 +44,11 @@ const page = () => {
                 </Accordion.Body>
               </Accordion.Item>
 
-              <Accordion.Item className="w-100" eventKey="1">
+              <Accordion.Item
+                className="w-100 mt-4"
+                data-aos="zoom-in"
+                eventKey="1"
+              >
                 <Accordion.Header className="w-100">
                   How do I book an appointment?
                 </Accordion.Header>
@@ -46,7 +58,11 @@ const page = () => {
                 </Accordion.Body>
               </Accordion.Item>
 
-              <Accordion.Item className="w-100" eventKey="2">
+              <Accordion.Item
+                className="w-100 mt-4"
+                data-aos="zoom-in"
+                eventKey="2"
+              >
                 <Accordion.Header>
                   Can I order medicines through FamilyDr?
                 </Accordion.Header>
@@ -56,7 +72,11 @@ const page = () => {
                 </Accordion.Body>
               </Accordion.Item>
 
-              <Accordion.Item className="w-100" eventKey="3">
+              <Accordion.Item
+                className="w-100 mt-4"
+                data-aos="zoom-in"
+                eventKey="3"
+              >
                 <Accordion.Header>
                   Is there a separate app for doctors?
                 </Accordion.Header>
@@ -67,7 +87,11 @@ const page = () => {
                 </Accordion.Body>
               </Accordion.Item>
 
-              <Accordion.Item className="w-100" eventKey="4">
+              <Accordion.Item
+                className="w-100 mt-4"
+                data-aos="zoom-in"
+                eventKey="4"
+              >
                 <Accordion.Header>Is FamilyDr free to use?</Accordion.Header>
                 <Accordion.Body>
                   The app is free for patients to download and use. Consultation
@@ -79,6 +103,7 @@ const page = () => {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 };

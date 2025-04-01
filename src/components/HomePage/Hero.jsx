@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import hero_image from "../../../public/image.png";
-import CustomNavbar from "@/app/CustomNavbar";
+import CustomNavbar from "../../app/CustomNavbar";
 
 const Hero = () => {
   return (
@@ -13,10 +13,12 @@ const Hero = () => {
         <CustomNavbar />
       </div>
       <div className="container d-flex flex-column flex-grow-1 justify-content-center  py-5 h-100">
-        <div className="row  align-items-center h-100">
+        <div className="row justify-content-between  align-items-center h-100">
           <div className="col-md-6">
-            <h1 className=" heroHeadding fw-bold">FamilyDr</h1>
-            <p>
+            <h1 data-aos="zoom-in" className=" heroHeadding fw-bold">
+              FamilyDr
+            </h1>
+            <p data-aos="zoom-in">
               FamilyDr is an online doctor appointment scheduling and management
               <br className="d-md-block d-none"></br>
               app that simplifies the process of booking appointments{" "}
@@ -34,11 +36,12 @@ const Hero = () => {
           </div>
           <div className="col-md-5 d-flex justify-content-center ps-md-5">
             <Image
+              data-aos="zoom-in"
               className="w-100 h-100"
               src={hero_image}
               alt="hero"
-              width={500}
-              height={500}
+              // width={500}
+              // height={500}
             />
           </div>
         </div>

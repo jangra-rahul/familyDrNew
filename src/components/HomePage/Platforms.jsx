@@ -82,7 +82,7 @@ const Platforms = () => {
           </h2>
           <Row>
             {platforms.map((platform, index) => (
-              <Col key={index} md={4} className="mb-4">
+              <Col data-aos="fade-up" key={index} md={4} className="mb-4">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}

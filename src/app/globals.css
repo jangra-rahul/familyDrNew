@@ -30,6 +30,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style-type: none !important;
 }
 
 a {
@@ -69,9 +70,233 @@ a {
 .text-primary {
   color: #0d6efd !important;
 }
+.bg_theme {
+  background-color: #0d6efd !important;
+}
+
+.fs_14 {
+  font-size: 14px;
+}
+
+.clr_gray {
+  color: rgba(233, 212, 212, 0.8);
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0d6efd !important;
+  box-shadow: 0px 0px transparent !important;
+  border: none !important;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0px 0px transparent !important;
+}
+
+.accordion-item {
+  background-color: #0d6efd !important;
+  border: none !important;
+  border-radius: 8px !important;
+  color: white !important;
+}
+
+.accordion-button {
+  background-color: #fff !important;
+  border-radius: 8px !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #0d6efd !important;
+  box-shadow: 0px 0px transparent !important;
+  border: none !important;
+  color: white !important;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0px 0px transparent !important;
+}
+
+.accordion-item {
+  background-color: #0d6efd !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+.accordion-button {
+  background-color: #fff !important;
+  border-radius: 5px !important;
+  color: black !important;
+}
+
+.timeline {
+  position: relative;
+  /* padding: 215px 20px 0 20px; */
+}
+
+.timeline-div:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #ccc;
+  background-size: 400% 400%;
+  animation: gradientAnimation 6s infinite;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  height: var(--timeline-div-before-height, 0);
+  transform: translateX(-50%);
+}
+
+.timeline:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(180deg, #e50a14, #e50a14, #2196f3, #ff9800);
+  background-size: 400% 400%;
+  animation: gradientAnimation 6s infinite;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: var(--timeline-before-height, 0);
+  transition: height 0.2s ease-out;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #ccc;
+  background-size: 400% 400%;
+  animation: gradientAnimation 6s infinite;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 180px;
+  text-align: center;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(odd) {
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  text-align: left;
+}
+
+.timeline-item .timeline-content {
+  position: relative;
+  width: 45%;
+  z-index: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  left: 55%;
+}
+
+.timeline-item .icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.timeline-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.timeline-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.timeline-item:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #0d6efd;
+  border-radius: 50%;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999999;
+}
+
+.icon_container {
+  background-color: #0d6dfd20;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding: 10px 10px 0 10px;
+  }
+
+  .timeline-item {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .timeline-item .timeline-content {
+    width: 100%;
+    left: 0 !important;
+  }
+
+  .timeline-item:after {
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+  }
+
+  .timeline:before,
+  .timeline:after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

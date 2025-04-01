@@ -4,6 +4,7 @@ import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
 import CustomNavbar from "../CustomNavbar";
 import Image from "next/image";
 import contact_img from "../../../public/contact_img.png";
+import Footer from "../Footer";
 
 const page = () => {
   return (
@@ -16,13 +17,16 @@ const page = () => {
           <Row className="justify-content-between align-items-center mb-4 w-100">
             {/* Left Text and Form */}
             <Col md={6} className="d-flex flex-column align-items-start">
-              <h2 className="fw-bold mb-4 text-primary">Contact Us</h2>
-              <p className="text-muted">
+              <h2 data-aos="zoom-in" className="fw-bold mb-4 text-primary">
+                Contact Us
+              </h2>
+              <p data-aos="zoom-in" className="text-muted">
                 We'd love to hear from you! Whether you have a question about
                 our services, need assistance, or just want to share feedback,
                 feel free to reach out.
               </p>
               <Image
+                data-aos="zoom-in"
                 className="w-100 h-100"
                 src={contact_img}
                 alt="Contact Illustration"
@@ -33,11 +37,18 @@ const page = () => {
 
             {/* Right Image */}
             <Col md={5} className="d-flex mt-4 mt-md-0 justify-content-center">
-              <Card className="shadow-sm p-4 w-100">
+              <Card data-aos="zoom-in" className="shadow-sm p-4 w-100">
                 <Form>
                   <Form.Group className="mb-4" controlId="formName">
                     <Form.Label>Full Name</Form.Label>
                     <Form.Control type="text" placeholder="Enter your name" />
+                  </Form.Group>
+                  <Form.Group className="mb-4" controlId="formName">
+                    <Form.Label>Phone Number</Form.Label>
+                    <Form.Control
+                      type="number"
+                      placeholder="Enter your Phone Number"
+                    />
                   </Form.Group>
 
                   <Form.Group className="mb-4" controlId="formEmail">
@@ -67,6 +78,7 @@ const page = () => {
           </Row>
         </Container>
       </div>
+      <Footer />
     </>
   );
 };
