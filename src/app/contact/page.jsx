@@ -10,7 +10,7 @@ const page = () => {
   return (
     <>
       <div className="min-vh-100 d-flex flex-column justify-center bg-light">
-        <div className="bg-white shadow-sm">
+        <div className="bg-white  shadow-sm">
           <CustomNavbar />
         </div>
         <Container className="py-5 d-flex flex-column flex-grow-1 align-items-center justify-content-center">
