@@ -20,7 +20,7 @@ const page = () => {
               <h2 data-aos="zoom-in" className="fw-bold mb-4 text-primary">
                 Contact Us
               </h2>
-              <p data-aos="zoom-in" className="text-muted">
+              <p data-aos="zoom-in" className="text-muted ">
                 We'd love to hear from you! Whether you have a question about
                 our services, need assistance, or just want to share feedback,
                 feel free to reach out.

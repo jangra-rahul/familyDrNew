@@ -15,10 +15,13 @@ const Hero = () => {
       <div className="container d-flex flex-column flex-grow-1 justify-content-center  py-5 h-100">
         <div className="row justify-content-between  align-items-center h-100">
           <div className="col-md-6">
-            <h1 data-aos="zoom-in" className=" heroHeadding fw-bold">
+            <h1
+              data-aos="zoom-in"
+              className=" heroHeadding fw-bold text-black "
+            >
               FamilyDr
             </h1>
-            <p data-aos="zoom-in">
+            <p className="text-muted " data-aos="zoom-in">
               FamilyDr is an online doctor appointment scheduling and management
               <br className="d-md-block d-none"></br>
               app that simplifies the process of booking appointments{" "}
@@ -33,6 +36,9 @@ const Hero = () => {
               <br className="d-md-block d-none"></br>
               related image provide krdo esi theme me
             </p>
+            <button className=" bg_theme px-5 py-2 rounded-3 text-white  border-0 fw-bold ">
+              Get App
+            </button>
           </div>
           <div className="col-md-5 d-flex justify-content-center ps-md-5">
             <Image

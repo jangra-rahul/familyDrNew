@@ -16,10 +16,10 @@ const page = () => {
       <Container className="py-5 py-5 d-flex flex-column flex-grow-1 align-items-center justify-content-center">
         <Row className="justify-content-center mb-4">
           <Col md={8}>
-            <h2 className="text-center fw-bold mb-4">
+            <h2 className="text-center text-black fw-bold mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-center text-muted">
+            <p className="text-center text-black text-muted">
               Here are some of the most common questions we receive. If you have
               more queries, feel free to contact us.
             </p>

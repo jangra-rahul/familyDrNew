@@ -157,7 +157,9 @@ const Services = () => {
                           {service.icon}
                         </div>
                         <div>
-                          <h4 className="fs-4 fw-bold mb-0">{service.title}</h4>
+                          <h4 className="fs-4 fw-bold mb-0 text-black">
+                            {service.title}
+                          </h4>
                           <p className="fs-6 mt-2 text-muted">
                             {service.description}
                           </p>
